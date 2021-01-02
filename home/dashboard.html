@@ -17,26 +17,26 @@
     <div class="row spannel_list">
       <div class="col-sm-3 col-xs-6">
         <div class="spannel">
-          <em>10015</em><span>篇</span>
-          <b>总文章数</b>
+          <em>7077</em><span>条</span>
+          <b>总预约数</b>
         </div>
       </div>
       <div class="col-sm-3 col-xs-6">
         <div class="spannel scolor01">
-          <em>123</em><span>篇</span>
-          <b>日新增文章数</b>
+          <em>123</em><span>条</span>
+          <b>日新增预约数</b>
         </div>
       </div>
       <div class="col-sm-3 col-xs-6">
         <div class="spannel scolor02">
-          <em>35</em><span>条</span>
-          <b>评论总数</b>
+          <em>7000</em><span>条</span>
+          <b>已完成预约数</b>
         </div>
       </div>
       <div class="col-sm-3 col-xs-6">
         <div class="spannel scolor03">
-          <em>123</em><span>条</span>
-          <b>日新增评论数</b>
+          <em>77</em><span>条</span>
+          <b>未完成预约数</b>
         </div>
       </div>
     </div>
@@ -60,36 +60,36 @@
   <script>
     var oChart = echarts.init(document.getElementById('curve_show'));
     var aList_all = [
-      { 'count': 36, 'date': '2019-04-13' },
-      { 'count': 52, 'date': '2019-04-14' },
-      { 'count': 78, 'date': '2019-04-15' },
-      { 'count': 85, 'date': '2019-04-16' },
-      { 'count': 65, 'date': '2019-04-17' },
-      { 'count': 72, 'date': '2019-04-18' },
-      { 'count': 88, 'date': '2019-04-19' },
-      { 'count': 64, 'date': '2019-04-20' },
-      { 'count': 72, 'date': '2019-04-21' },
-      { 'count': 90, 'date': '2019-04-22' },
-      { 'count': 96, 'date': '2019-04-23' },
-      { 'count': 100, 'date': '2019-04-24' },
-      { 'count': 102, 'date': '2019-04-25' },
-      { 'count': 110, 'date': '2019-04-26' },
-      { 'count': 123, 'date': '2019-04-27' },
-      { 'count': 100, 'date': '2019-04-28' },
-      { 'count': 132, 'date': '2019-04-29' },
-      { 'count': 146, 'date': '2019-04-30' },
-      { 'count': 200, 'date': '2019-05-01' },
-      { 'count': 180, 'date': '2019-05-02' },
-      { 'count': 163, 'date': '2019-05-03' },
-      { 'count': 110, 'date': '2019-05-04' },
-      { 'count': 80, 'date': '2019-05-05' },
-      { 'count': 82, 'date': '2019-05-06' },
-      { 'count': 70, 'date': '2019-05-07' },
-      { 'count': 65, 'date': '2019-05-08' },
-      { 'count': 54, 'date': '2019-05-09' },
-      { 'count': 40, 'date': '2019-05-10' },
-      { 'count': 45, 'date': '2019-05-11' },
-      { 'count': 38, 'date': '2019-05-12' },
+      { 'count': 36, 'date': '2020-04-13' },
+      { 'count': 52, 'date': '2020-04-14' },
+      { 'count': 78, 'date': '2020-04-15' },
+      { 'count': 85, 'date': '2020-04-16' },
+      { 'count': 65, 'date': '2020-04-17' },
+      { 'count': 72, 'date': '2020-04-18' },
+      { 'count': 88, 'date': '2020-04-19' },
+      { 'count': 64, 'date': '2020-04-20' },
+      { 'count': 72, 'date': '2020-04-21' },
+      { 'count': 90, 'date': '2020-04-22' },
+      { 'count': 96, 'date': '2020-04-23' },
+      { 'count': 100, 'date': '2020-04-24' },
+      { 'count': 102, 'date': '2020-04-25' },
+      { 'count': 110, 'date': '2020-04-26' },
+      { 'count': 123, 'date': '2020-04-27' },
+      { 'count': 100, 'date': '2020-04-28' },
+      { 'count': 132, 'date': '2020-04-29' },
+      { 'count': 146, 'date': '2020-04-30' },
+      { 'count': 200, 'date': '2020-05-01' },
+      { 'count': 180, 'date': '2020-05-02' },
+      { 'count': 163, 'date': '2020-05-03' },
+      { 'count': 110, 'date': '2020-05-04' },
+      { 'count': 80, 'date': '2020-05-05' },
+      { 'count': 82, 'date': '2020-05-06' },
+      { 'count': 70, 'date': '2020-05-07' },
+      { 'count': 65, 'date': '2020-05-08' },
+      { 'count': 54, 'date': '2020-05-09' },
+      { 'count': 40, 'date': '2020-05-10' },
+      { 'count': 45, 'date': '2020-05-11' },
+      { 'count': 38, 'date': '2020-05-12' },
     ];
 
     let aCount = [];
@@ -102,7 +102,7 @@
 
     var chartopt = {
       title: {
-        text: '月新增文章数',
+        text: '月新增预约数',
         left: 'center',
         top: '10'
       },
@@ -110,7 +110,7 @@
         trigger: 'axis'
       },
       legend: {
-        data: ['新增文章'],
+        data: ['新增预约'],
         top: '40'
       },
       toolbox: {
@@ -134,16 +134,16 @@
       ],
       yAxis: [
         {
-          name: '月新增文章数',
+          name: '月新增预约数',
           type: 'value'
         }
       ],
       series: [
         {
-          name: '新增文章',
+          name: '新增预约',
           type: 'line',
           smooth: true,
-          itemStyle: { normal: { areaStyle: { type: 'default' }, color: '#f80' }, lineStyle: { color: '#f80' } },
+          itemStyle: { normal: { areaStyle: { type: 'default' }, color: 'red' }, lineStyle: { color: '#f80' } },
           data: aCount
         }],
       areaStyle: {
@@ -178,7 +178,7 @@
     {
       title: {
         top: 10,
-        text: '分类文章数量比',
+        text: '品牌分类数量比',
         x: 'center'
       },
       tooltip: {
@@ -189,7 +189,7 @@
       legend: {
         x: 'center',
         top: 65,
-        data: ['奇趣事', '会生活', '爱旅行', '趣美味']
+        data: ['iphone', 'oppo', '华为', '三星']
       },
       toolbox: {
         show: true,
@@ -222,10 +222,10 @@
           radius: ['45%', '60%'],
           center: ['50%', '65%'],
           data: [
-            { value: 300, name: '奇趣事' },
-            { value: 100, name: '会生活' },
-            { value: 260, name: '爱旅行' },
-            { value: 180, name: '趣美味' }
+            { value: 300, name: 'iphone' },
+            { value: 100, name: 'oppo' },
+            { value: 260, name: '华为' },
+            { value: 180, name: '三星' }
           ]
         }
       ]
@@ -238,7 +238,7 @@
     var oColumnopt =
     {
       title: {
-        text: '文章访问量',
+        text: '品牌访问量',
         left: 'center',
         top: '10'
       },
@@ -246,7 +246,7 @@
         trigger: 'axis'
       },
       legend: {
-        data: ['奇趣事', '会生活', '爱旅行', '趣美味'],
+        data: ['iPhone', 'oppo', '华为', '三星'],
         top: '40'
       },
       toolbox: {
@@ -263,7 +263,7 @@
       xAxis: [
         {
           type: 'category',
-          data: ['1月', '2月', '3月', '4月', '5月']
+          data: ['7月', '8月', '9月', '10月', '11月']
         }
       ],
       yAxis: [
@@ -274,40 +274,40 @@
       ],
       series: [
         {
-          name: '奇趣事',
+          name: 'iPhone',
           type: 'bar',
           barWidth: 20,
           itemStyle: {
-            normal: { areaStyle: { type: 'default' }, color: '#fd956a' }
+            normal: { areaStyle: { type: 'default' }, color: '#ff9565' }
           },
           data: [800, 708, 920, 1090, 1200]
         },
         {
-          name: '会生活',
+          name: 'oppo',
           type: 'bar',
           barWidth: 20,
           itemStyle: {
-            normal: { areaStyle: { type: 'default' }, color: '#2bb6db' }
+            normal: { areaStyle: { type: 'default' }, color: '#bbb' }
           },
           data: [400, 468, 520, 690, 800]
         },
         {
-          name: '爱旅行',
+          name: '华为',
           type: 'bar',
           barWidth: 20,
           itemStyle: {
-            normal: { areaStyle: { type: 'default' }, color: '#13cfd5' }
+            normal: { areaStyle: { type: 'default' }, color: 'skyblue' }
           },
-          data: [500, 668, 520, 790, 900]
+          data: [800, 668, 880, 900, 1000]
         },
         {
-          name: '趣美味',
+          name: '三星',
           type: 'bar',
           barWidth: 20,
           itemStyle: {
-            normal: { areaStyle: { type: 'default' }, color: '#00ce68' }
+            normal: { areaStyle: { type: 'default' }, color: '#00ce67' }
           },
-          data: [600, 508, 720, 890, 1000]
+          data: [600, 508, 720, 890, 800]
         }
       ],
       grid: {
