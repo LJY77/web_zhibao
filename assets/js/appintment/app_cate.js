@@ -21,7 +21,7 @@ $(function () {
         layer.open({
             type: 1,
             area: ['500px', '250px'],
-            title: '添加文章分类',
+            title: '添加分类',
             content: $('#dialog-add').html()
         })
     })
