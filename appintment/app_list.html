@@ -12,7 +12,7 @@
 <body>
     <!-- 卡片区域 -->
     <div class="layui-card">
-        <div class="layui-card-header">预约列表</div>
+        <div class="layui-card-header">质保服务列表</div>
         <div class="layui-card-body">
 
             <!-- 筛选区域 -->
@@ -20,13 +20,13 @@
                 <div class="layui-form-item layui-inline">
                     <select name="cate_id"></select>
                 </div>
-                <div class="layui-form-item layui-inline">
+                <!-- <div class="layui-form-item layui-inline">
                     <select name="state">
                         <option value="">所有状态</option>
                         <option value="已完成">已完成</option>
                         <option value="未完成">未完成</option>
                     </select>
-                </div>
+                </div> -->
                 <div class="layui-form-item layui-inline">
                     <button class="layui-btn" lay-submit lay-filter="formDemo">筛选</button>
                 </div>
@@ -36,18 +36,18 @@
             <!-- 列表区域 -->
             <table class="layui-table">
                 <colgroup>
-                    <col />
-                    <col width="150" />
-                    <col width="180" />
-                    <col width="150" />
-                    <col width="150" />
+                    <col width="500" />
+                    <col width="300" />
+                    <col width="200" />
+                    <col width="190" />
+                    <col width="190" />
                 </colgroup>
                 <thead>
                     <tr>
-                        <th>预约内容</th>
+                        <th>质保内容</th>
                         <th>品牌分类</th>
                         <th>预约时间</th>
-                        <th>预约状态</th>
+                        <th>备注</th>
                         <th>操作</th>
                     </tr>
                 </thead>
@@ -66,7 +66,7 @@
           <td>{{$value.title}}</td>
           <td>{{$value.cate_name}}</td>
           <td>{{$value.pub_date|dataFormat}}</td>
-          <td>{{$value.state}}</td>
+          <td></td>
           <td>
             <button type="button" class="layui-btn layui-btn-danger layui-btn-xs">删除</button>
           </td>

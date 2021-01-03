@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>预约服务管理</title>
+  <title>质保服务管理</title>
   <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" />
   <link rel="stylesheet" href="/assets/css/appintment/app_cate.css" />
 </head>
@@ -13,8 +13,8 @@
   <!-- 卡片区域 -->
   <div class="layui-card">
     <div class="layui-card-header">
-      <span>预约服务类别管理</span>
-      <button type="button" class="layui-btn layui-btn-normal layui-btn-sm" id="btnAddCate">添加品牌</button>
+      <span>质保服务类别管理</span>
+      <button type="button" class="layui-btn layui-btn-normal layui-btn-sm" id="btnAddCate">添加分类</button>
     </div>
     <div class="layui-card-body">
       <table class="layui-table">
@@ -26,39 +26,44 @@
         <thead>
           <tr>
 
-            <th>品牌名称</th>
-            <th>预约门店</th>
+            <th>质保品牌名称</th>
+            <th>质保时间</th>
             <th>操作</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>门店1</td>
+
             <td>华为</td>
+            <td>1年</td>
             <td> <button type="button" class="layui-btn layui-btn-xs">编辑</button>
               <button type="button" class="layui-btn layui-btn-danger layui-btn-xs">删除</button></td>
           </tr>
           <tr>
-            <td>门店2</td>
+
             <td>oppo</td>
+            <td>终身</td>
             <td> <button type="button" class="layui-btn layui-btn-xs">编辑</button>
               <button type="button" class="layui-btn layui-btn-danger layui-btn-xs">删除</button></td>
           </tr>
           <tr>
-            <td>门店1</td>
+
             <td>iphone</td>
+            <td>1年</td>
             <td> <button type="button" class="layui-btn layui-btn-xs">编辑</button>
               <button type="button" class="layui-btn layui-btn-danger layui-btn-xs">删除</button></td>
           </tr>
           <tr>
-            <td>门店3</td>
+
             <td>oppo</td>
+            <td>3年</td>
             <td> <button type="button" class="layui-btn layui-btn-xs">编辑</button>
               <button type="button" class="layui-btn layui-btn-danger layui-btn-xs">删除</button></td>
           </tr>
           <tr>
-            <td>门店1</td>
+
             <td>oppo</td>
+            <td>2年</td>
             <td> <button type="button" class="layui-btn layui-btn-xs btn-edit" data-id="{{$value.Id}}">编辑</button>
               <button type="button" class="layui-btn layui-btn-danger layui-btn-xs">删除</button></td>
           </tr>
@@ -83,15 +88,15 @@
   <script type="text/html" id="dialog-add">
         <form class="layui-form" id="form-add">
           <div class="layui-form-item">
-            <label class="layui-form-label">预约门店</label>
+            <label class="layui-form-label">质保名称</label>
             <div class="layui-input-block">
-              <input type="text" name="name" required  lay-verify="required" placeholder="请输入分类名称" autocomplete="off" class="layui-input">
+              <input type="text" name="name" required  lay-verify="required" placeholder="请输入质保品牌名称" autocomplete="off" class="layui-input">
             </div>
           </div>
           <div class="layui-form-item">
-            <label class="layui-form-label">品牌名称</label>
+            <label class="layui-form-label">质保时间</label>
             <div class="layui-input-block">
-              <input type="text" name="alias" required  lay-verify="required" placeholder="请输入分类别名" autocomplete="off" class="layui-input">
+              <input type="text" name="alias" required  lay-verify="required" placeholder="请输入质保时间" autocomplete="off" class="layui-input">
             </div>
           </div>
           <div class="layui-form-item">
