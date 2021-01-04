@@ -47,7 +47,9 @@ $(function () {
                 }
                 // 使用模板引擎渲染页面的数据
                 var htmlStr = template('tpl-table', res)
+                // console.log(htmlStr);
                 $('tbody').html(htmlStr)
+
                 // 调用渲染分页的方法
                 renderPage(res.total)
             }
@@ -153,19 +155,6 @@ $(function () {
         })
     })
 
-    initArtCateList()
-
-    // 获取文章分类的列表
-    function initArtCateList() {
-        $.ajax({
-            method: 'GET',
-            url: '/my/article/cates',
-            success: function (res) {
-                var htmlStr = template('tpl-table', res)
-                $('tbody').html(htmlStr)
-            }
-        })
-    }
     // 通过 代理 的形式，为 btn-edit 按钮绑定点击事件
     var indexEdit = null
     $('tbody').on('click', '.btn-edit', function () {
